@@ -37,6 +37,8 @@ public class Task0 {
     lapSet.add (lap2);
     lapSet.add (lap3);
     lapSet.add (lap4);
+
+    getFeatures(lapSet);
   }
 
   public static void getFeatures(Set<Laptops> set) {
@@ -63,7 +65,7 @@ public class Task0 {
       switch (selectedFeature) {
         case "Марка ноутбука":
           System.out.println("Введите название ноутбука: ");
-          String selectedLap = scanner.nextLine(); 
+          String selectedLap = scanner.nextLine();
           for (Laptops lap : set) {
               if (lap.getFirm().equalsIgnoreCase(selectedLap)) {
                 lap.showAll();
@@ -91,15 +93,20 @@ public class Task0 {
             }
             
           }   
-
-          
+        case "Операционная система":
+          System.out.println("Введите название операционной системы: ");
+          String selectedOS = scanner.nextLine();
+          for (Laptops lap : set) {
+              if (lap.getOs().equalsIgnoreCase(selectedOS)) {
+                lap.showAll();
+              } 
+          }
 
       }
 
 
+    } else {
+      System.out.println("Задан неверный номер критерия!");
     }
-
   }
-
-  
 }
