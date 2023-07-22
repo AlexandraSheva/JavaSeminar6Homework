@@ -32,7 +32,7 @@ public class Laptops {
   }
 
   public void showAll () {
-    System.out.printf("Параметры ноутбука: %s, %s, %s, %s", getFirm(), getOzu(), getObZhD(), getOs());
+    System.out.printf("Параметры ноутбука: %s, %s, %s, %s. ", getFirm(), getOzu(), getObZhD(), getOs());
   }
 
 }

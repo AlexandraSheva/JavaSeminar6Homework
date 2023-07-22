@@ -73,6 +73,7 @@ public class Task0 {
               System.out.println("Ноутбук такой фирмы не найден. ");
             }*/
           }
+          break;
         case "ОЗУ":
           System.out.println("Введите минимальное значение для ОЗУ: ");
           String minOzu = scanner.nextLine();
@@ -82,7 +83,8 @@ public class Task0 {
               lap.showAll();
             }
             
-          }  
+          } 
+          break; 
         case "Объем жесткого диска":
           System.out.println("Введите минимальное значение для ОЖД: ");
           String minObZhD = scanner.nextLine();
@@ -92,7 +94,8 @@ public class Task0 {
               lap.showAll();
             }
             
-          }   
+          } 
+          break;  
         case "Операционная система":
           System.out.println("Введите название операционной системы: ");
           String selectedOS = scanner.nextLine();
@@ -101,6 +104,7 @@ public class Task0 {
                 lap.showAll();
               } 
           }
+          break;
 
       }
 
